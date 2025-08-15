@@ -1,28 +1,32 @@
 <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-    <!-- Tiger body -->
-    <ellipse cx="200" cy="180" rx="90" ry="45" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Tiger body - dog-like proportions -->
+    <ellipse cx="200" cy="180" rx="80" ry="40" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Tiger head -->
-    <ellipse cx="280" cy="150" rx="35" ry="40" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Tiger head - more elongated -->
+    <ellipse cx="285" cy="150" rx="30" ry="35" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Snout -->
-    <ellipse cx="310" cy="155" rx="15" ry="10" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Distinctive long snout -->
+    <ellipse cx="320" cy="155" rx="18" ry="12" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Legs -->
-    <rect x="160" y="210" width="15" height="40" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="185" y="210" width="15" height="40" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="210" y="210" width="15" height="40" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="235" y="210" width="15" height="40" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Legs - more dog-like -->
+    <ellipse cx="170" cy="235" rx="10" ry="25" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="195" cy="235" rx="10" ry="25" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="220" cy="235" rx="10" ry="25" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="245" cy="235" rx="10" ry="25" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Distinctive stripes on back -->
-    <rect x="140" y="160" width="8" height="40" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="155" y="155" width="8" height="45" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="170" y="160" width="8" height="40" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="185" y="155" width="8" height="45" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="200" y="160" width="8" height="40" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="215" y="155" width="8" height="45" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="230" y="160" width="8" height="40" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="245" y="155" width="8" height="45" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Distinctive stripes on back and rump -->
+    <path d="M 145 165 Q 150 160 155 165 Q 150 170 145 175 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 165 160 Q 170 155 175 160 Q 170 165 165 170 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 185 165 Q 190 160 195 165 Q 190 170 185 175 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 205 160 Q 210 155 215 160 Q 210 165 205 170 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 225 165 Q 230 160 235 165 Q 230 170 225 175 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 245 160 Q 250 155 255 160 Q 250 165 245 170 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 135 175 Q 140 170 145 175 Q 140 180 135 185 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 155 180 Q 160 175 165 180 Q 160 185 155 190 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 175 175 Q 180 170 185 175 Q 180 180 175 185 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 195 180 Q 200 175 205 180 Q 200 185 195 190 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 215 175 Q 220 170 225 175 Q 220 180 215 185 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 235 180 Q 240 175 245 180 Q 240 185 235 190 Z" fill="white" stroke="#333" stroke-width="2"/>
     
     <!-- Ears -->
     <polygon points="265,125 260,135 275,135" fill="white" stroke="#333" stroke-width="2"/>

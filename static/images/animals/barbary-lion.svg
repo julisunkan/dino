@@ -1,9 +1,12 @@
 <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-    <!-- Barbary Lion body -->
-    <ellipse cx="200" cy="190" rx="75" ry="40" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Barbary Lion body - more muscular -->
+    <ellipse cx="200" cy="190" rx="85" ry="45" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Head -->
-    <circle cx="270" cy="150" r="40" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Powerful chest -->
+    <ellipse cx="230" cy="175" rx="35" ry="25" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Head - more proportional -->
+    <ellipse cx="285" cy="150" rx="38" ry="42" fill="white" stroke="#333" stroke-width="2"/>
     
     <!-- Magnificent mane (distinctive feature) -->
     <circle cx="270" cy="150" r="55" fill="white" stroke="#333" stroke-width="2" opacity="0.7"/>

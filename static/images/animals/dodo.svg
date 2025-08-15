@@ -1,46 +1,84 @@
 <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-    <!-- Dodo body -->
-    <ellipse cx="200" cy="180" rx="80" ry="60" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Dodo body - plump and rounded -->
+    <ellipse cx="200" cy="185" rx="75" ry="55" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Dodo head -->
-    <circle cx="270" cy="130" r="40" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Breast -->
+    <ellipse cx="220" cy="200" rx="45" ry="35" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Large curved beak -->
-    <path d="M 310 130 Q 340 120 350 140 Q 340 160 320 150 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Dodo head - more proportional -->
+    <ellipse cx="285" cy="135" rx="35" ry="38" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Legs -->
-    <rect x="180" y="220" width="12" height="35" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="210" y="220" width="12" height="35" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Distinctive hooked beak -->
+    <path d="M 315 125 Q 345 115 355 135 Q 350 150 335 155 Q 320 150 315 140 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 355 135 Q 360 140 355 145" fill="none" stroke="#333" stroke-width="2"/>
     
-    <!-- Webbed feet -->
-    <path d="M 175 255 Q 170 260 180 265 Q 190 260 200 265 Q 195 270 185 267 Z" fill="white" stroke="#333" stroke-width="2"/>
-    <path d="M 205 255 Q 200 260 210 265 Q 220 260 230 265 Q 225 270 215 267 Z" fill="white" stroke="#333" stroke-width="2"/>
-    
-    <!-- Wing -->
-    <ellipse cx="150" cy="160" rx="25" ry="45" fill="white" stroke="#333" stroke-width="2"/>
-    
-    <!-- Wing feathers -->
-    <path d="M 140 140 L 130 135" stroke="#333" stroke-width="2"/>
-    <path d="M 135 155 L 125 150" stroke="#333" stroke-width="2"/>
-    <path d="M 140 170 L 130 165" stroke="#333" stroke-width="2"/>
-    <path d="M 145 185 L 135 180" stroke="#333" stroke-width="2"/>
-    
-    <!-- Eye -->
-    <circle cx="280" cy="120" r="5" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Beak hook -->
+    <path d="M 350 140 Q 360 145 355 150" fill="white" stroke="#333" stroke-width="2"/>
     
     <!-- Nostril -->
-    <circle cx="325" cy="135" r="2" fill="white" stroke="#333" stroke-width="1"/>
+    <ellipse cx="340" cy="130" rx="2" ry="1" fill="white" stroke="#333" stroke-width="1"/>
     
-    <!-- Tail feathers -->
-    <path d="M 120 180 Q 90 170 80 190 Q 90 210 110 200" fill="white" stroke="#333" stroke-width="2"/>
-    <path d="M 115 190 Q 85 180 75 200 Q 85 220 105 210" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Strong legs -->
+    <ellipse cx="185" cy="245" rx="10" ry="20" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="215" cy="245" rx="10" ry="20" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Body feather pattern -->
-    <path d="M 160 160 Q 165 155 170 160" fill="none" stroke="#333" stroke-width="1"/>
-    <path d="M 180 170 Q 185 165 190 170" fill="none" stroke="#333" stroke-width="1"/>
-    <path d="M 200 180 Q 205 175 210 180" fill="none" stroke="#333" stroke-width="1"/>
-    <path d="M 220 170 Q 225 165 230 170" fill="none" stroke="#333" stroke-width="1"/>
+    <!-- Lower legs -->
+    <ellipse cx="185" cy="270" rx="6" ry="12" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="215" cy="270" rx="6" ry="12" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Head crest -->
-    <path d="M 250 100 Q 255 90 265 95 Q 275 90 285 100" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Three-toed feet -->
+    <path d="M 175 280 Q 170 285 175 290" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 185 280 Q 180 290 185 295" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 195 280 Q 200 285 195 290" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <path d="M 205 280 Q 200 285 205 290" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 215 280 Q 210 290 215 295" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 225 280 Q 230 285 225 290" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Vestigial wings - small and useless -->
+    <ellipse cx="155" cy="165" rx="15" ry="35" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Wing feathers -->
+    <path d="M 145 150 L 135 145" stroke="#333" stroke-width="2"/>
+    <path d="M 150 160 L 140 155" stroke="#333" stroke-width="2"/>
+    <path d="M 155 170 L 145 165" stroke="#333" stroke-width="2"/>
+    <path d="M 160 180 L 150 175" stroke="#333" stroke-width="2"/>
+    <path d="M 165 190 L 155 185" stroke="#333" stroke-width="2"/>
+    
+    <!-- Eye with eyelid -->
+    <ellipse cx="290" cy="125" rx="6" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    <circle cx="292" cy="123" r="3" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Fluffy tail feathers -->
+    <ellipse cx="125" cy="185" rx="20" ry="25" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 110 175 L 100 170" stroke="#333" stroke-width="2"/>
+    <path d="M 115 185 L 105 180" stroke="#333" stroke-width="2"/>
+    <path d="M 120 195 L 110 190" stroke="#333" stroke-width="2"/>
+    <path d="M 125 205 L 115 200" stroke="#333" stroke-width="2"/>
+    
+    <!-- Body feather texture -->
+    <path d="M 160 150 Q 170 145 180 150" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 170 160 Q 180 155 190 160" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 180 170 Q 190 165 200 170" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 190 180 Q 200 175 210 180" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 200 190 Q 210 185 220 190" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 210 200 Q 220 195 230 200" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Chest feathers -->
+    <path d="M 200 180 Q 210 175 220 180" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 210 190 Q 220 185 230 190" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 220 200 Q 230 195 240 200" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Head feathers -->
+    <path d="M 265 115 L 260 110" stroke="#333" stroke-width="1"/>
+    <path d="M 275 110 L 270 105" stroke="#333" stroke-width="1"/>
+    <path d="M 285 108 L 280 103" stroke="#333" stroke-width="1"/>
+    <path d="M 295 110 L 300 105" stroke="#333" stroke-width="1"/>
+    <path d="M 305 115 L 310 110" stroke="#333" stroke-width="1"/>
+    
+    <!-- Neck -->
+    <path d="M 260 155 Q 240 165 225 175" fill="none" stroke="#333" stroke-width="6"/>
+    
+    <!-- Characteristic crest -->
+    <path d="M 280 105 Q 285 95 290 105" fill="white" stroke="#333" stroke-width="2"/>
 </svg>

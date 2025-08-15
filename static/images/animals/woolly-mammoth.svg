@@ -1,36 +1,79 @@
 <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-    <!-- Mammoth body -->
-    <ellipse cx="200" cy="200" rx="120" ry="80" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Mammoth body - more realistic barrel shape -->
+    <ellipse cx="200" cy="200" rx="100" ry="65" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Mammoth head -->
-    <circle cx="280" cy="150" r="60" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Shoulder hump -->
+    <ellipse cx="180" cy="155" rx="40" ry="25" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Trunk -->
-    <path d="M 320 170 Q 350 190 340 220 Q 330 240 310 250" fill="none" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+    <!-- Mammoth head - more accurate dome shape -->
+    <ellipse cx="290" cy="150" rx="45" ry="55" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Legs -->
-    <rect x="140" y="260" width="20" height="30" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="180" y="260" width="20" height="30" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="220" y="260" width="20" height="30" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="260" y="260" width="20" height="30" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Forehead dome -->
+    <ellipse cx="285" cy="125" rx="35" ry="30" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Tusks -->
-    <path d="M 300 140 Q 320 120 340 130" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/>
-    <path d="M 300 160 Q 320 180 340 170" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+    <!-- Trunk - more realistic S-curve -->
+    <path d="M 325 170 Q 360 185 350 210 Q 340 235 320 245 Q 310 250 305 255" fill="none" stroke="#333" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 325 170 Q 360 185 350 210 Q 340 235 320 245 Q 310 250 305 255" fill="white" stroke="#333" stroke-width="8"/>
     
-    <!-- Eye -->
-    <circle cx="290" cy="140" r="5" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Trunk tip -->
+    <circle cx="305" cy="255" r="6" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="302" cy="252" rx="2" ry="3" fill="white" stroke="#333" stroke-width="1"/>
+    <ellipse cx="308" cy="252" rx="2" ry="3" fill="white" stroke="#333" stroke-width="1"/>
     
-    <!-- Fur texture lines -->
-    <path d="M 120 170 L 140 160" stroke="#333" stroke-width="1"/>
-    <path d="M 130 190 L 150 180" stroke="#333" stroke-width="1"/>
-    <path d="M 140 210 L 160 200" stroke="#333" stroke-width="1"/>
-    <path d="M 250 120 L 270 110" stroke="#333" stroke-width="1"/>
-    <path d="M 270 130 L 290 120" stroke="#333" stroke-width="1"/>
+    <!-- Massive legs - more proportional -->
+    <ellipse cx="150" cy="275" rx="18" ry="35" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="180" cy="275" rx="18" ry="35" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="220" cy="275" rx="18" ry="35" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="260" cy="275" rx="18" ry="35" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Ear -->
-    <ellipse cx="250" cy="130" rx="15" ry="25" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Feet -->
+    <ellipse cx="150" cy="295" rx="20" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="180" cy="295" rx="20" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="220" cy="295" rx="20" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="260" cy="295" rx="20" ry="8" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Tail -->
-    <path d="M 80 200 Q 60 210 70 230" fill="none" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+    <!-- Curved tusks - more realistic -->
+    <path d="M 310 145 Q 340 115 365 125 Q 375 135 370 145" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 310 165 Q 340 195 365 185 Q 375 175 370 165" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 310 145 Q 340 115 365 125" fill="none" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 310 165 Q 340 195 365 185" fill="none" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Eye - more realistic -->
+    <ellipse cx="295" cy="140" rx="8" ry="6" fill="white" stroke="#333" stroke-width="2"/>
+    <circle cx="297" cy="138" r="3" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Ear - more elephant-like -->
+    <path d="M 250 125 Q 230 110 225 135 Q 235 155 255 150 Q 260 140 250 125 Z" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Dense fur texture -->
+    <path d="M 120 170 L 110 165" stroke="#333" stroke-width="2"/>
+    <path d="M 130 175 L 120 170" stroke="#333" stroke-width="2"/>
+    <path d="M 140 180 L 130 175" stroke="#333" stroke-width="2"/>
+    <path d="M 150 185 L 140 180" stroke="#333" stroke-width="2"/>
+    <path d="M 160 190 L 150 185" stroke="#333" stroke-width="2"/>
+    <path d="M 170 195 L 160 190" stroke="#333" stroke-width="2"/>
+    <path d="M 180 200 L 170 195" stroke="#333" stroke-width="2"/>
+    
+    <!-- Fur on head and neck -->
+    <path d="M 240 115 L 230 110" stroke="#333" stroke-width="2"/>
+    <path d="M 250 120 L 240 115" stroke="#333" stroke-width="2"/>
+    <path d="M 260 125 L 250 120" stroke="#333" stroke-width="2"/>
+    <path d="M 270 130 L 260 125" stroke="#333" stroke-width="2"/>
+    <path d="M 245 165 L 235 160" stroke="#333" stroke-width="2"/>
+    <path d="M 255 170 L 245 165" stroke="#333" stroke-width="2"/>
+    
+    <!-- Body fur pattern -->
+    <path d="M 140 160 Q 150 155 160 160" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 160 170 Q 170 165 180 170" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 180 180 Q 190 175 200 180" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 200 190 Q 210 185 220 190" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Tail - small and hairy -->
+    <ellipse cx="85" cy="205" rx="15" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 75 205 L 65 200" stroke="#333" stroke-width="3"/>
+    <path d="M 75 208 L 65 210" stroke="#333" stroke-width="3"/>
+    <path d="M 75 202 L 65 195" stroke="#333" stroke-width="3"/>
+    
+    <!-- Neck connection -->
+    <path d="M 250 175 Q 230 185 210 195" fill="none" stroke="#333" stroke-width="8"/>
 </svg>

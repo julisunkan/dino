@@ -1,46 +1,101 @@
 <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-    <!-- Cat body -->
-    <ellipse cx="200" cy="180" rx="100" ry="50" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Cat body - more muscular feline shape -->
+    <ellipse cx="200" cy="190" rx="85" ry="45" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Cat head -->
-    <circle cx="280" cy="140" r="45" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Powerful chest -->
+    <ellipse cx="220" cy="170" rx="30" ry="25" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Legs -->
-    <rect x="160" y="210" width="15" height="40" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="190" y="210" width="15" height="40" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="220" y="210" width="15" height="40" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="250" y="210" width="15" height="40" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Cat head - more realistic feline proportions -->
+    <ellipse cx="290" cy="145" rx="35" ry="40" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Paws -->
-    <circle cx="167" cy="255" r="8" fill="white" stroke="#333" stroke-width="2"/>
-    <circle cx="197" cy="255" r="8" fill="white" stroke="#333" stroke-width="2"/>
-    <circle cx="227" cy="255" r="8" fill="white" stroke="#333" stroke-width="2"/>
-    <circle cx="257" cy="255" r="8" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Muzzle -->
+    <ellipse cx="315" cy="155" rx="15" ry="12" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Saber teeth -->
-    <path d="M 300 155 L 305 180" stroke="#333" stroke-width="4" stroke-linecap="round" fill="white"/>
-    <path d="M 310 155 L 315 180" stroke="#333" stroke-width="4" stroke-linecap="round" fill="white"/>
+    <!-- Powerful legs - more muscular -->
+    <ellipse cx="170" cy="235" rx="12" ry="25" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="200" cy="235" rx="12" ry="25" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="230" cy="235" rx="12" ry="25" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="260" cy="235" rx="12" ry="25" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Ears -->
-    <polygon points="260,110 250,130 275,125" fill="white" stroke="#333" stroke-width="2"/>
-    <polygon points="295,110 305,130 285,125" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Lower legs -->
+    <ellipse cx="170" cy="265" rx="8" ry="15" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="200" cy="265" rx="8" ry="15" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="230" cy="265" rx="8" ry="15" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="260" cy="265" rx="8" ry="15" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Eyes -->
-    <circle cx="270" cy="130" r="4" fill="white" stroke="#333" stroke-width="2"/>
-    <circle cx="290" cy="130" r="4" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Paws with claws -->
+    <ellipse cx="170" cy="280" rx="10" ry="6" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="200" cy="280" rx="10" ry="6" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="230" cy="280" rx="10" ry="6" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="260" cy="280" rx="10" ry="6" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Nose -->
-    <polygon points="305,145 300,150 310,150" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Retractable claws -->
+    <path d="M 165 275 L 160 285" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 175 275 L 180 285" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 195 275 L 190 285" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 205 275 L 210 285" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 225 275 L 220 285" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 235 275 L 240 285" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 255 275 L 250 285" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 265 275 L 270 285" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Massive saber teeth -->
+    <path d="M 305 150 Q 310 170 315 190 Q 320 200 325 195" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 315 150 Q 320 170 325 190 Q 330 200 335 195" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 305 150 Q 310 170 315 190" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 315 150 Q 320 170 325 190" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Pointed ears -->
+    <polygon points="275,115 270,135 285,130" fill="white" stroke="#333" stroke-width="2"/>
+    <polygon points="305,115 310,135 295,130" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Inner ear -->
+    <polygon points="277,120 275,130 282,127" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="303,120 305,130 298,127" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Realistic eyes -->
+    <ellipse cx="285" cy="140" rx="6" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="295" cy="140" rx="6" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="285" cy="138" rx="3" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+    <ellipse cx="295" cy="138" rx="3" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Cat nose -->
+    <polygon points="320,150 315,155 325,155" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 320 155 L 320 160" stroke="#333" stroke-width="1"/>
     
     <!-- Mouth -->
-    <path d="M 300 155 Q 305 160 310 155" fill="none" stroke="#333" stroke-width="2"/>
+    <path d="M 315 165 Q 320 170 325 165" fill="none" stroke="#333" stroke-width="2"/>
+    <path d="M 310 170 Q 315 175 320 170" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 320 170 Q 325 175 330 170" fill="none" stroke="#333" stroke-width="1"/>
     
-    <!-- Tail -->
-    <path d="M 100 180 Q 60 170 40 190 Q 50 210 80 200" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Whiskers -->
+    <path d="M 290 160 L 275 155" stroke="#333" stroke-width="1"/>
+    <path d="M 290 165 L 275 165" stroke="#333" stroke-width="1"/>
+    <path d="M 290 170 L 275 175" stroke="#333" stroke-width="1"/>
+    <path d="M 330 160 L 345 155" stroke="#333" stroke-width="1"/>
+    <path d="M 330 165 L 345 165" stroke="#333" stroke-width="1"/>
+    <path d="M 330 170 L 345 175" stroke="#333" stroke-width="1"/>
     
-    <!-- Spots pattern -->
-    <circle cx="170" cy="160" r="8" fill="white" stroke="#333" stroke-width="1"/>
-    <circle cx="210" cy="170" r="6" fill="white" stroke="#333" stroke-width="1"/>
-    <circle cx="240" cy="160" r="7" fill="white" stroke="#333" stroke-width="1"/>
-    <circle cx="260" cy="170" r="5" fill="white" stroke="#333" stroke-width="1"/>
+    <!-- Long tail -->
+    <path d="M 115 190 Q 70 180 45 200 Q 35 220 50 235 Q 75 230 100 210" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Spotted pattern -->
+    <ellipse cx="180" cy="165" rx="8" ry="6" fill="white" stroke="#333" stroke-width="1"/>
+    <ellipse cx="210" cy="175" rx="6" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+    <ellipse cx="240" cy="170" rx="7" ry="6" fill="white" stroke="#333" stroke-width="1"/>
+    <ellipse cx="160" cy="180" rx="5" ry="4" fill="white" stroke="#333" stroke-width="1"/>
+    <ellipse cx="220" cy="185" rx="6" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+    <ellipse cx="250" cy="180" rx="5" ry="4" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Shoulder muscles -->
+    <path d="M 250 155 Q 260 150 270 155" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 240 165 Q 250 160 260 165" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Neck -->
+    <path d="M 270 165 Q 250 175 230 185" fill="none" stroke="#333" stroke-width="6"/>
+    
+    <!-- Tail markings -->
+    <ellipse cx="80" cy="200" rx="4" ry="3" fill="white" stroke="#333" stroke-width="1"/>
+    <ellipse cx="65" cy="215" rx="3" ry="3" fill="white" stroke="#333" stroke-width="1"/>
+    <ellipse cx="55" cy="225" rx="3" ry="3" fill="white" stroke="#333" stroke-width="1"/>
 </svg>

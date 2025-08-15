@@ -1,58 +1,97 @@
 <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-    <!-- T-Rex body -->
-    <ellipse cx="180" cy="200" rx="70" ry="40" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- T-Rex body - more barrel-shaped -->
+    <ellipse cx="180" cy="200" rx="60" ry="35" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- T-Rex head -->
-    <ellipse cx="280" cy="150" rx="50" ry="35" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Chest -->
+    <ellipse cx="200" cy="175" rx="45" ry="30" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Large jaw -->
-    <path d="M 320 160 Q 340 170 330 190 Q 310 185 300 175 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- T-Rex head - larger, more imposing -->
+    <ellipse cx="290" cy="140" rx="45" ry="40" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Teeth -->
-    <polygon points="315,170 320,180 318,180" fill="white" stroke="#333" stroke-width="1"/>
-    <polygon points="325,175 330,185 328,185" fill="white" stroke="#333" stroke-width="1"/>
-    <polygon points="320,175 325,185 323,185" fill="white" stroke="#333" stroke-width="1"/>
+    <!-- Upper jaw -->
+    <path d="M 325 135 Q 350 140 355 160 Q 350 175 330 175 Q 315 170 320 150 Z" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Massive legs -->
-    <rect x="160" y="225" width="20" height="50" fill="white" stroke="#333" stroke-width="2"/>
-    <rect x="200" y="225" width="20" height="50" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Lower jaw -->
+    <path d="M 325 165 Q 350 170 355 185 Q 350 200 330 195 Q 315 190 320 175 Z" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Large feet with claws -->
-    <ellipse cx="170" cy="280" rx="15" ry="8" fill="white" stroke="#333" stroke-width="2"/>
-    <ellipse cx="210" cy="280" rx="15" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Massive teeth - upper jaw -->
+    <polygon points="340,150 345,165 343,165" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="345,145 350,160 348,160" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="350,148 355,163 353,163" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="335,152 340,167 338,167" fill="white" stroke="#333" stroke-width="1"/>
     
-    <!-- Claws -->
-    <path d="M 160 275 L 155 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
-    <path d="M 170 275 L 165 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
-    <path d="M 180 275 L 185 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
-    <path d="M 200 275 L 195 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
-    <path d="M 210 275 L 205 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
-    <path d="M 220 275 L 225 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <!-- Massive teeth - lower jaw -->
+    <polygon points="340,175 345,160 343,160" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="345,180 350,165 348,165" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="350,177 355,162 353,162" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="335,173 340,158 338,158" fill="white" stroke="#333" stroke-width="1"/>
     
-    <!-- Tiny arms -->
-    <ellipse cx="140" cy="180" rx="8" ry="20" fill="white" stroke="#333" stroke-width="2"/>
-    <ellipse cx="135" cy="205" rx="5" ry="12" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Powerful legs - massive thighs -->
+    <ellipse cx="170" cy="240" rx="18" ry="35" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="210" cy="240" rx="18" ry="35" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Eye -->
-    <circle cx="290" cy="140" r="6" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Lower legs -->
+    <ellipse cx="170" cy="280" rx="12" ry="25" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="210" cy="280" rx="12" ry="25" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Three-toed feet -->
+    <ellipse cx="170" cy="305" rx="18" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="210" cy="305" rx="18" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Massive claws -->
+    <path d="M 160 300 L 150 315" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 170 300 L 165 315" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 180 300 L 185 315" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 200 300 L 190 315" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 210 300 L 205 315" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 220 300 L 225 315" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Tiny arms - correctly proportioned -->
+    <ellipse cx="135" cy="175" rx="6" ry="18" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="128" cy="195" rx="4" ry="10" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Small claws on arms -->
+    <path d="M 125 190 L 120 195" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 130 190 L 135 195" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Eye with brow ridge -->
+    <ellipse cx="295" cy="130" rx="8" ry="6" fill="white" stroke="#333" stroke-width="2"/>
+    <circle cx="297" cy="128" r="3" fill="white" stroke="#333" stroke-width="1"/>
+    <path d="M 285 125 Q 295 120 305 125" fill="none" stroke="#333" stroke-width="2"/>
     
     <!-- Nostril -->
-    <ellipse cx="310" cy="145" rx="3" ry="2" fill="white" stroke="#333" stroke-width="1"/>
+    <ellipse cx="340" cy="140" rx="4" ry="3" fill="white" stroke="#333" stroke-width="1"/>
     
-    <!-- Neck -->
-    <path d="M 250 165 Q 230 175 220 185" fill="none" stroke="#333" stroke-width="3"/>
+    <!-- Muscular neck -->
+    <path d="M 250 155 Q 230 165 215 180" fill="none" stroke="#333" stroke-width="8"/>
     
-    <!-- Tail -->
-    <path d="M 110 200 Q 60 190 30 200 Q 20 210 35 220 Q 80 215 120 210" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Long tail for balance -->
+    <path d="M 120 200 Q 70 195 40 205 Q 20 215 25 230 Q 45 235 80 225 Q 110 215 130 210" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Spinal ridges -->
-    <path d="M 150 180 L 145 175" stroke="#333" stroke-width="2"/>
-    <path d="M 170 175 L 165 170" stroke="#333" stroke-width="2"/>
-    <path d="M 190 175 L 185 170" stroke="#333" stroke-width="2"/>
-    <path d="M 210 175 L 205 170" stroke="#333" stroke-width="2"/>
+    <!-- Tail tip -->
+    <ellipse cx="30" cy="222" rx="8" ry="12" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Back pattern -->
-    <path d="M 130 190 Q 140 185 150 190" fill="none" stroke="#333" stroke-width="1"/>
+    <!-- Dorsal spines -->
+    <polygon points="150,165 145,155 155,160" fill="white" stroke="#333" stroke-width="2"/>
+    <polygon points="170,160 165,150 175,155" fill="white" stroke="#333" stroke-width="2"/>
+    <polygon points="190,160 185,150 195,155" fill="white" stroke="#333" stroke-width="2"/>
+    <polygon points="210,165 205,155 215,160" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Skin texture -->
+    <path d="M 140 180 Q 150 175 160 180" fill="none" stroke="#333" stroke-width="1"/>
     <path d="M 160 185 Q 170 180 180 185" fill="none" stroke="#333" stroke-width="1"/>
-    <path d="M 190 185 Q 200 180 210 185" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 180 190 Q 190 185 200 190" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 200 185 Q 210 180 220 185" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Head ridges -->
+    <path d="M 270 125 Q 280 120 290 125" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 280 135 Q 290 130 300 135" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Jaw muscle -->
+    <ellipse cx="275" cy="155" rx="15" ry="10" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Tail vertebrae ridges -->
+    <path d="M 80 200 L 75 195" stroke="#333" stroke-width="1"/>
+    <path d="M 60 205 L 55 200" stroke="#333" stroke-width="1"/>
+    <path d="M 45 210 L 40 205" stroke="#333" stroke-width="1"/>
 </svg>

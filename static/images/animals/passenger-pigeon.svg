@@ -1,16 +1,19 @@
 <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-    <!-- Pigeon body -->
-    <ellipse cx="200" cy="180" rx="60" ry="35" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Pigeon body - streamlined -->
+    <ellipse cx="200" cy="185" rx="55" ry="30" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Pigeon head -->
-    <circle cx="260" cy="150" r="25" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Breast -->
+    <ellipse cx="215" cy="195" rx="35" ry="20" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Beak -->
-    <path d="M 280 150 Q 295 148 290 155 Q 285 160 280 155 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <!-- Pigeon head - smaller, more proportional -->
+    <ellipse cx="265" cy="155" rx="20" ry="22" fill="white" stroke="#333" stroke-width="2"/>
     
-    <!-- Wings -->
-    <ellipse cx="170" cy="165" rx="40" ry="25" fill="white" stroke="#333" stroke-width="2" transform="rotate(-15 170 165)"/>
-    <ellipse cx="230" cy="165" rx="40" ry="25" fill="white" stroke="#333" stroke-width="2" transform="rotate(15 230 165)"/>
+    <!-- Small beak -->
+    <path d="M 280 155 Q 290 153 288 158 Q 285 162 280 160 Z" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Long, pointed wings -->
+    <ellipse cx="165" cy="170" rx="45" ry="20" fill="white" stroke="#333" stroke-width="2" transform="rotate(-10 165 170)"/>
+    <ellipse cx="235" cy="170" rx="45" ry="20" fill="white" stroke="#333" stroke-width="2" transform="rotate(10 235 170)"/>
     
     <!-- Wing feather details -->
     <path d="M 145 155 L 135 150" stroke="#333" stroke-width="1"/>

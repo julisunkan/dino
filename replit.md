@@ -55,6 +55,17 @@ Simple Flask application with a modular structure:
 - **Python 3.x**: Runtime environment
 - **Static Asset Management**: Flask's built-in static file serving for CSS, JavaScript, and SVG assets
 
+## Recent Changes
+**August 15, 2025**: Updated animal SVGs for improved realism and anatomical accuracy:
+- Enhanced Woolly Mammoth with realistic dome head, curved tusks, dense fur texture, and proper proportions
+- Improved Saber-toothed Cat with muscular build, detailed claws, and characteristic long canine teeth
+- Refined T-Rex with massive jaws, accurate teeth positioning, powerful legs, and dorsal spines
+- Updated Dodo with distinctive hooked beak, vestigial wings, and plump body proportions
+- Enhanced Barbary Lion with magnificent mane details and powerful muscular structure
+- Improved Tasmanian Tiger with dog-like anatomy, elongated snout, and distinctive stripe patterns
+- Refined Passenger Pigeon with streamlined body and long pointed wings for flight
+- Enhanced Cave Bear with massive robust build and powerful shoulder structure
+
 ## Future Considerations
 The architecture is designed to easily accommodate:
 - Database integration (mentioned potential for Drizzle/Postgres addition)
