@@ -1,0 +1,36 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Mammoth body -->
+    <ellipse cx="200" cy="200" rx="120" ry="80" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Mammoth head -->
+    <circle cx="280" cy="150" r="60" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Trunk -->
+    <path d="M 320 170 Q 350 190 340 220 Q 330 240 310 250" fill="none" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Legs -->
+    <rect x="140" y="260" width="20" height="30" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="180" y="260" width="20" height="30" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="220" y="260" width="20" height="30" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="260" y="260" width="20" height="30" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Tusks -->
+    <path d="M 300 140 Q 320 120 340 130" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 300 160 Q 320 180 340 170" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Eye -->
+    <circle cx="290" cy="140" r="5" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Fur texture lines -->
+    <path d="M 120 170 L 140 160" stroke="#333" stroke-width="1"/>
+    <path d="M 130 190 L 150 180" stroke="#333" stroke-width="1"/>
+    <path d="M 140 210 L 160 200" stroke="#333" stroke-width="1"/>
+    <path d="M 250 120 L 270 110" stroke="#333" stroke-width="1"/>
+    <path d="M 270 130 L 290 120" stroke="#333" stroke-width="1"/>
+    
+    <!-- Ear -->
+    <ellipse cx="250" cy="130" rx="15" ry="25" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Tail -->
+    <path d="M 80 200 Q 60 210 70 230" fill="none" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "woolly-mammoth",
+    "name": "Woolly Mammoth",
+    "filename": "woolly-mammoth.svg",
+    "category": "mammal",
+    "description": "These massive elephants with long curved tusks and thick fur lived during the Ice Age. The last populations survived until about 4,000 years ago on remote Arctic islands.",
+    "location": "Arctic regions of Europe, Asia, and North America",
+    "extinction_period": "4000 years ago",
+    "extinction_date": "2000 BCE"
+  },
+  {
+    "id": "saber-toothed-cat",
+    "name": "Saber-toothed Cat",
+    "filename": "saber-toothed-cat.svg",
+    "category": "mammal",
+    "description": "Famous for their enormous canine teeth that could grow up to 7 inches long, these powerful predators hunted large prey during the Pleistocene epoch. They went extinct around 10,000 years ago.",
+    "location": "North and South America",
+    "extinction_period": "10000 years ago",
+    "extinction_date": "8000 BCE"
+  },
+  {
+    "id": "dodo",
+    "name": "Dodo",
+    "filename": "dodo.svg",
+    "category": "bird",
+    "description": "This flightless bird from Mauritius became extinct in the late 17th century due to human hunting and introduced species. It has become a symbol of extinction caused by human activity.",
+    "location": "Mauritius",
+    "extinction_period": "17th century",
+    "extinction_date": "1662 CE"
+  },
+  {
+    "id": "tasmanian-tiger",
+    "name": "Tasmanian Tiger (Thylacine)",
+    "filename": "tasmanian-tiger.svg",
+    "category": "mammal",
+    "description": "This unique marsupial carnivore had distinctive dark stripes across its back and could open its jaws to an incredible 120 degrees. The last known individual died in captivity in 1936.",
+    "location": "Tasmania, Australia",
+    "extinction_period": "20th century",
+    "extinction_date": "1936 CE"
+  },
+  {
+    "id": "tyrannosaurus-rex",
+    "name": "Tyrannosaurus Rex",
+    "filename": "tyrannosaurus-rex.svg",
+    "category": "dinosaur",
+    "description": "One of the largest land predators ever known, T. Rex had powerful jaws with teeth up to 8 inches long. These apex predators lived at the very end of the age of dinosaurs.",
+    "location": "Western North America",
+    "extinction_period": "66 million years ago",
+    "extinction_date": "66 million years ago"
+  },
+  {
+    "id": "triceratops",
+    "name": "Triceratops",
+    "filename": "triceratops.svg",
+    "category": "dinosaur",
+    "description": "This three-horned herbivorous dinosaur had a large bony frill and could grow up to 30 feet long. They were among the last dinosaur species to exist before the mass extinction event.",
+    "location": "Western North America",
+    "extinction_period": "66 million years ago",
+    "extinction_date": "66 million years ago"
+  },
+  {
+    "id": "stegosaurus",
+    "name": "Stegosaurus",
+    "filename": "stegosaurus.svg",
+    "category": "dinosaur",
+    "description": "Known for the distinctive plates along its back and spikes on its tail, Stegosaurus was a large herbivorous dinosaur. Despite its size, it had a brain roughly the size of a walnut.",
+    "location": "Western United States",
+    "extinction_period": "150 million years ago",
+    "extinction_date": "150 million years ago"
+  },
+  {
+    "id": "passenger-pigeon",
+    "name": "Passenger Pigeon",
+    "filename": "passenger-pigeon.svg",
+    "category": "bird",
+    "description": "Once numbering in the billions, these birds flew in massive flocks that could darken the sky for hours. Overhunting and habitat destruction led to their extinction in 1914.",
+    "location": "Eastern North America",
+    "extinction_period": "20th century",
+    "extinction_date": "1914 CE"
+  },
+  {
+    "id": "irish-elk",
+    "name": "Irish Elk",
+    "filename": "irish-elk.svg",
+    "category": "mammal",
+    "description": "Despite its name, this giant deer lived across Europe and Asia, not just Ireland. Males had massive antlers spanning up to 12 feet across, making them the largest deer that ever lived.",
+    "location": "Europe and Asia",
+    "extinction_period": "8000 years ago",
+    "extinction_date": "6000 BCE"
+  },
+  {
+    "id": "quagga",
+    "name": "Quagga",
+    "filename": "quagga.svg",
+    "category": "mammal",
+    "description": "This subspecies of plains zebra had stripes only on the front half of its body, with the rear being brown and unstriped. The last wild quagga was shot in 1878.",
+    "location": "South Africa",
+    "extinction_period": "19th century",
+    "extinction_date": "1883 CE"
+  },
+  {
+    "id": "great-auk",
+    "name": "Great Auk",
+    "filename": "great-auk.svg",
+    "category": "bird",
+    "description": "These large, flightless seabirds were excellent swimmers and divers, similar to penguins. They were hunted to extinction for their feathers, meat, and oil by the mid-19th century.",
+    "location": "North Atlantic",
+    "extinction_period": "19th century",
+    "extinction_date": "1844 CE"
+  },
+  {
+    "id": "cave-bear",
+    "name": "Cave Bear",
+    "filename": "cave-bear.svg",
+    "category": "mammal",
+    "description": "These massive bears were 30% larger than modern brown bears and lived in caves throughout Europe during the Ice Age. They were primarily vegetarian despite their intimidating size.",
+    "location": "Europe",
+    "extinction_period": "24000 years ago",
+    "extinction_date": "22000 BCE"
+  },
+  {
+    "id": "pteranodon",
+    "name": "Pteranodon",
+    "filename": "pteranodon.svg",
+    "category": "reptile",
+    "description": "This giant flying reptile had a wingspan of up to 23 feet and a distinctive bony crest on its head. Despite its size, it was likely an expert glider that fed primarily on fish.",
+    "location": "Western Interior Seaway of North America",
+    "extinction_period": "85 million years ago",
+    "extinction_date": "85 million years ago"
+  },
+  {
+    "id": "megalodon",
+    "name": "Megalodon",
+    "filename": "megalodon.svg",
+    "category": "fish",
+    "description": "This massive prehistoric shark could grow up to 60 feet long with teeth the size of a person's hand. It was the apex predator of ancient oceans before going extinct around 3.6 million years ago.",
+    "location": "Oceans worldwide",
+    "extinction_period": "3.6 million years ago",
+    "extinction_date": "3.6 million years ago"
+  },
+  {
+    "id": "giant-ground-sloth",
+    "name": "Giant Ground Sloth",
+    "filename": "giant-ground-sloth.svg",
+    "category": "mammal",
+    "description": "These enormous sloths could reach the size of elephants and walked on their hind legs to reach high vegetation. They had massive claws and thick skin for protection from predators.",
+    "location": "South America",
+    "extinction_period": "11000 years ago",
+    "extinction_date": "9000 BCE"
+  },
+  {
+    "id": "auroch",
+    "name": "Auroch",
+    "filename": "auroch.svg",
+    "category": "mammal",
+    "description": "These wild ancestors of domestic cattle were massive, powerful animals that stood over 6 feet tall at the shoulder. The last aurochs died in a Polish forest in 1627.",
+    "location": "Europe, Asia, and North Africa",
+    "extinction_period": "17th century",
+    "extinction_date": "1627 CE"
+  },
+  {
+    "id": "moa",
+    "name": "Moa",
+    "filename": "moa.svg",
+    "category": "bird",
+    "description": "These giant flightless birds from New Zealand could grow up to 12 feet tall and weigh over 500 pounds. They were hunted to extinction by the Māori within 200 years of human arrival.",
+    "location": "New Zealand",
+    "extinction_period": "15th century",
+    "extinction_date": "1445 CE"
+  },
+  {
+    "id": "stellar-sea-cow",
+    "name": "Steller's Sea Cow",
+    "filename": "stellar-sea-cow.svg",
+    "category": "mammal",
+    "description": "This massive marine mammal could grow up to 30 feet long and weighed up to 10 tons. Discovered in 1741, it was hunted to extinction within just 27 years for its meat and hide.",
+    "location": "Bering Sea",
+    "extinction_period": "18th century",
+    "extinction_date": "1768 CE"
+  },
+  {
+    "id": "carolina-parakeet",
+    "name": "Carolina Parakeet",
+    "filename": "carolina-parakeet.svg",
+    "category": "bird",
+    "description": "The only parrot species native to the eastern United States, these colorful birds lived in large flocks. They were declared extinct in 1939 due to deforestation and hunting.",
+    "location": "Eastern United States",
+    "extinction_period": "20th century",
+    "extinction_date": "1918 CE"
+  },
+  {
+    "id": "barbary-lion",
+    "name": "Barbary Lion",
+    "filename": "barbary-lion.svg",
+    "category": "mammal",
+    "description": "Also known as the Atlas Lion, this was the largest lion subspecies with males having particularly impressive dark manes. The last wild Barbary lion was killed in Morocco in 1942.",
+    "location": "North Africa",
+    "extinction_period": "20th century",
+    "extinction_date": "1942 CE"
+  }
+]

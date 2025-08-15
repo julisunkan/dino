@@ -1,0 +1,51 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Stegosaurus body -->
+    <ellipse cx="200" cy="210" rx="100" ry="35" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Small head -->
+    <ellipse cx="290" cy="190" rx="25" ry="20" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Long neck -->
+    <path d="M 275 200 Q 260 205 250 210" fill="none" stroke="#333" stroke-width="6"/>
+    
+    <!-- Back plates -->
+    <polygon points="160,175 150,150 170,160" fill="white" stroke="#333" stroke-width="2"/>
+    <polygon points="180,170 170,140 190,155" fill="white" stroke="#333" stroke-width="2"/>
+    <polygon points="200,165 190,130 210,150" fill="white" stroke="#333" stroke-width="2"/>
+    <polygon points="220,165 210,130 230,150" fill="white" stroke="#333" stroke-width="2"/>
+    <polygon points="240,170 230,140 250,155" fill="white" stroke="#333" stroke-width="2"/>
+    <polygon points="260,175 250,150 270,160" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Legs -->
+    <rect x="150" y="235" width="15" height="35" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="175" y="235" width="15" height="35" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="205" y="235" width="15" height="35" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="230" y="235" width="15" height="35" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Feet -->
+    <ellipse cx="157" cy="275" rx="10" ry="5" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="182" cy="275" rx="10" ry="5" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="212" cy="275" rx="10" ry="5" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="237" cy="275" rx="10" ry="5" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Tail with spikes -->
+    <ellipse cx="110" cy="215" rx="30" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Tail spikes (thagomizer) -->
+    <polygon points="85,210 75,200 90,205" fill="white" stroke="#333" stroke-width="2"/>
+    <polygon points="85,220 75,230 90,225" fill="white" stroke="#333" stroke-width="2"/>
+    <polygon points="95,205 85,195 100,200" fill="white" stroke="#333" stroke-width="2"/>
+    <polygon points="95,225 85,235 100,230" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Eye -->
+    <circle cx="295" cy="185" r="3" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Small mouth -->
+    <path d="M 310 195 Q 315 198 310 200" fill="none" stroke="#333" stroke-width="2"/>
+    
+    <!-- Body texture -->
+    <path d="M 140 200 Q 150 195 160 200" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 170 205 Q 180 200 190 205" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 200 200 Q 210 195 220 200" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 230 205 Q 240 200 250 205" fill="none" stroke="#333" stroke-width="1"/>
+</svg>

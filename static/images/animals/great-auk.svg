@@ -1,0 +1,65 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Great Auk body -->
+    <ellipse cx="200" cy="200" rx="60" ry="80" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Great Auk head -->
+    <ellipse cx="200" cy="120" rx="35" ry="40" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Large beak -->
+    <path d="M 235 130 Q 270 125 275 145 Q 270 165 240 155 Q 235 145 235 140 Z" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Beak grooves -->
+    <path d="M 245 135 Q 255 132 260 140" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 245 145 Q 255 142 260 150" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 245 155 Q 255 152 260 160" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Eye -->
+    <circle cx="210" cy="115" r="5" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Wing (small, flightless) -->
+    <ellipse cx="160" cy="180" rx="20" ry="35" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="240" cy="180" rx="20" ry="35" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Wing feather details -->
+    <path d="M 145 165 L 140 160" stroke="#333" stroke-width="1"/>
+    <path d="M 150 175 L 145 170" stroke="#333" stroke-width="1"/>
+    <path d="M 155 185 L 150 180" stroke="#333" stroke-width="1"/>
+    <path d="M 160 195 L 155 190" stroke="#333" stroke-width="1"/>
+    
+    <path d="M 255 165 L 260 160" stroke="#333" stroke-width="1"/>
+    <path d="M 250 175 L 255 170" stroke="#333" stroke-width="1"/>
+    <path d="M 245 185 L 250 180" stroke="#333" stroke-width="1"/>
+    <path d="M 240 195 L 245 190" stroke="#333" stroke-width="1"/>
+    
+    <!-- Webbed feet -->
+    <ellipse cx="185" cy="285" rx="15" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="215" cy="285" rx="15" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Webbing between toes -->
+    <path d="M 175 285 Q 180 290 185 285 Q 190 290 195 285" fill="white" stroke="#333" stroke-width="1"/>
+    <path d="M 205 285 Q 210 290 215 285 Q 220 290 225 285" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Legs -->
+    <rect x="180" y="260" width="10" height="25" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="210" y="260" width="10" height="25" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- White belly marking -->
+    <ellipse cx="200" cy="220" rx="30" ry="40" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Black back/upper parts (shown as outlined areas) -->
+    <path d="M 170 160 Q 160 150 170 140 Q 200 135 230 140 Q 240 150 230 160 Q 200 165 170 160 Z" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Neck -->
+    <ellipse cx="200" cy="160" rx="25" ry="20" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Chest pattern -->
+    <path d="M 180 180 Q 190 175 200 180 Q 210 175 220 180" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 175 200 Q 185 195 200 200 Q 215 195 225 200" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Back feather pattern -->
+    <path d="M 175 150 Q 185 145 195 150" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 205 150 Q 215 145 225 150" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Distinctive white patch around eye -->
+    <ellipse cx="205" cy="115" rx="8" ry="6" fill="white" stroke="#333" stroke-width="1"/>
+</svg>

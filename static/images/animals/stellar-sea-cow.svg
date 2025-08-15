@@ -1,0 +1,90 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Steller's Sea Cow massive body -->
+    <ellipse cx="200" cy="180" rx="140" ry="50" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Head -->
+    <ellipse cx="320" cy="160" rx="40" ry="35" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Blunt snout -->
+    <ellipse cx="350" cy="165" rx="15" ry="12" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Small eye -->
+    <circle cx="330" cy="150" r="4" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Nostril -->
+    <ellipse cx="355" cy="160" rx="3" ry="2" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Mouth -->
+    <path d="M 345 175 Q 355 180 360 175" fill="none" stroke="#333" stroke-width="2"/>
+    
+    <!-- Flipper-like forelimbs -->
+    <ellipse cx="150" cy="160" rx="35" ry="15" fill="white" stroke="#333" stroke-width="2" transform="rotate(20 150 160)"/>
+    <ellipse cx="150" cy="200" rx="35" ry="15" fill="white" stroke="#333" stroke-width="2" transform="rotate(-20 150 200)"/>
+    
+    <!-- No hind limbs (just body tapering) -->
+    
+    <!-- Massive paddle-like tail -->
+    <path d="M 60 180 Q 20 160 10 180 Q 20 200 60 180 Z" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Tail notch -->
+    <path d="M 25 180 L 15 180" stroke="#333" stroke-width="2"/>
+    
+    <!-- Body texture (wrinkled skin) -->
+    <path d="M 120 160 Q 130 155 140 160" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 120 170 Q 130 165 140 170" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 120 180 Q 130 175 140 180" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 120 190 Q 130 185 140 190" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 120 200 Q 130 195 140 200" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <path d="M 180 155 Q 190 150 200 155" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 180 165 Q 190 160 200 165" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 180 175 Q 190 170 200 175" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 180 185 Q 190 180 200 185" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 180 195 Q 190 190 200 195" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 180 205 Q 190 200 200 205" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <path d="M 220 155 Q 230 150 240 155" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 220 165 Q 230 160 240 165" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 220 175 Q 230 170 240 175" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 220 185 Q 230 180 240 185" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 220 195 Q 230 190 240 195" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 220 205 Q 230 200 240 205" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <path d="M 260 160 Q 270 155 280 160" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 260 170 Q 270 165 280 170" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 260 180 Q 270 175 280 180" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 260 190 Q 270 185 280 190" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Flipper details -->
+    <path d="M 130 155 Q 140 150 150 155" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 135 165 Q 145 160 155 165" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <path d="M 130 195 Q 140 200 150 195" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 135 205 Q 145 210 155 205" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Thick blubber layer indication -->
+    <path d="M 100 170 Q 110 165 120 170" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 100 180 Q 110 175 120 180" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 100 190 Q 110 185 120 190" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Dorsal ridge -->
+    <path d="M 80 165 Q 120 160 160 165 Q 200 160 240 165 Q 280 160 300 165" fill="none" stroke="#333" stroke-width="2"/>
+    
+    <!-- Ventral line -->
+    <path d="M 80 195 Q 120 200 160 195 Q 200 200 240 195 Q 280 200 320 195" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Body segments/folds -->
+    <path d="M 340 145 Q 345 140 350 145" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 340 155 Q 345 150 350 155" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 340 175 Q 345 180 350 175" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 340 185 Q 345 190 350 185" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Tail flukes detail -->
+    <path d="M 30 170 Q 20 165 15 170" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 30 180 Q 20 175 15 180" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 30 190 Q 20 195 15 190" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Neck fold -->
+    <path d="M 300 145 Q 310 140 320 145" fill="none" stroke="#333" stroke-width="2"/>
+    <path d="M 300 195 Q 310 200 320 195" fill="none" stroke="#333" stroke-width="2"/>
+</svg>

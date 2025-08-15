@@ -1,0 +1,46 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Dodo body -->
+    <ellipse cx="200" cy="180" rx="80" ry="60" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Dodo head -->
+    <circle cx="270" cy="130" r="40" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Large curved beak -->
+    <path d="M 310 130 Q 340 120 350 140 Q 340 160 320 150 Z" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Legs -->
+    <rect x="180" y="220" width="12" height="35" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="210" y="220" width="12" height="35" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Webbed feet -->
+    <path d="M 175 255 Q 170 260 180 265 Q 190 260 200 265 Q 195 270 185 267 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 205 255 Q 200 260 210 265 Q 220 260 230 265 Q 225 270 215 267 Z" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Wing -->
+    <ellipse cx="150" cy="160" rx="25" ry="45" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Wing feathers -->
+    <path d="M 140 140 L 130 135" stroke="#333" stroke-width="2"/>
+    <path d="M 135 155 L 125 150" stroke="#333" stroke-width="2"/>
+    <path d="M 140 170 L 130 165" stroke="#333" stroke-width="2"/>
+    <path d="M 145 185 L 135 180" stroke="#333" stroke-width="2"/>
+    
+    <!-- Eye -->
+    <circle cx="280" cy="120" r="5" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Nostril -->
+    <circle cx="325" cy="135" r="2" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Tail feathers -->
+    <path d="M 120 180 Q 90 170 80 190 Q 90 210 110 200" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 115 190 Q 85 180 75 200 Q 85 220 105 210" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Body feather pattern -->
+    <path d="M 160 160 Q 165 155 170 160" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 180 170 Q 185 165 190 170" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 200 180 Q 205 175 210 180" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 220 170 Q 225 165 230 170" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Head crest -->
+    <path d="M 250 100 Q 255 90 265 95 Q 275 90 285 100" fill="white" stroke="#333" stroke-width="2"/>
+</svg>

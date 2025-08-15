@@ -1,0 +1,52 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Triceratops body -->
+    <ellipse cx="180" cy="200" rx="80" ry="45" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Head with frill -->
+    <ellipse cx="280" cy="160" rx="60" ry="50" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Large neck frill -->
+    <path d="M 220 130 Q 200 110 180 120 Q 190 140 200 150 Q 220 145 240 150 Q 260 145 280 150 Q 300 145 320 150 Q 340 140 350 160 Q 340 180 320 170 Q 300 175 280 170 Q 260 175 240 170 Q 220 175 220 150 Z" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Three horns -->
+    <!-- Nose horn -->
+    <path d="M 320 170 L 340 160" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+    <!-- Brow horns -->
+    <path d="M 280 145 L 290 130" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 300 145 L 310 130" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Legs -->
+    <rect x="140" y="230" width="18" height="40" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="170" y="230" width="18" height="40" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="200" y="230" width="18" height="40" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="230" y="230" width="18" height="40" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Feet -->
+    <ellipse cx="149" cy="275" rx="12" ry="6" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="179" cy="275" rx="12" ry="6" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="209" cy="275" rx="12" ry="6" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="239" cy="275" rx="12" ry="6" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Eye -->
+    <circle cx="290" cy="160" r="5" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Beak -->
+    <path d="M 320 175 Q 330 180 325 185" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Tail -->
+    <path d="M 100 200 Q 60 190 40 205 Q 50 220 80 215" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Frill decorations -->
+    <circle cx="200" cy="135" r="4" fill="white" stroke="#333" stroke-width="1"/>
+    <circle cx="220" cy="140" r="3" fill="white" stroke="#333" stroke-width="1"/>
+    <circle cx="240" cy="135" r="4" fill="white" stroke="#333" stroke-width="1"/>
+    <circle cx="260" cy="140" r="3" fill="white" stroke="#333" stroke-width="1"/>
+    <circle cx="280" cy="135" r="4" fill="white" stroke="#333" stroke-width="1"/>
+    <circle cx="300" cy="140" r="3" fill="white" stroke="#333" stroke-width="1"/>
+    <circle cx="320" cy="135" r="4" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Body pattern -->
+    <path d="M 140 180 Q 150 175 160 180" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 170 185 Q 180 180 190 185" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 200 180 Q 210 175 220 180" fill="none" stroke="#333" stroke-width="1"/>
+</svg>

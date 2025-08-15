@@ -1,0 +1,64 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Quagga body -->
+    <ellipse cx="200" cy="190" rx="70" ry="45" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Quagga head -->
+    <ellipse cx="270" cy="160" rx="30" ry="25" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Snout -->
+    <ellipse cx="295" cy="165" rx="10" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Front stripes (distinctive quagga pattern) -->
+    <rect x="240" y="140" width="8" height="50" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="225" y="145" width="8" height="45" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="210" y="150" width="8" height="40" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="195" y="155" width="8" height="35" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="180" y="160" width="8" height="30" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Partial stripes on sides -->
+    <rect x="165" y="165" width="6" height="25" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="155" y="170" width="5" height="20" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Legs -->
+    <rect x="170" y="220" width="12" height="35" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="190" y="220" width="12" height="35" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="210" y="220" width="12" height="35" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="230" y="220" width="12" height="35" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Hooves -->
+    <ellipse cx="176" cy="260" rx="8" ry="4" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="196" cy="260" rx="8" ry="4" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="216" cy="260" rx="8" ry="4" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="236" cy="260" rx="8" ry="4" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Mane with stripes -->
+    <path d="M 260 135 Q 250 125 255 145 Q 265 130 275 140 Q 285 125 290 145" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Mane stripes -->
+    <rect x="258" y="130" width="3" height="20" fill="white" stroke="#333" stroke-width="1"/>
+    <rect x="265" y="125" width="3" height="25" fill="white" stroke="#333" stroke-width="1"/>
+    <rect x="272" y="130" width="3" height="20" fill="white" stroke="#333" stroke-width="1"/>
+    <rect x="279" y="125" width="3" height="25" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Ears -->
+    <ellipse cx="265" cy="145" rx="6" ry="12" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="280" cy="145" rx="6" ry="12" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Eye -->
+    <circle cx="275" cy="155" r="4" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Nostril -->
+    <circle cx="300" cy="165" r="2" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Mouth -->
+    <path d="M 295 175 Q 300 180 305 175" fill="none" stroke="#333" stroke-width="2"/>
+    
+    <!-- Tail (solid brown, no stripes like rear body) -->
+    <path d="M 130 190 Q 100 185 80 195 Q 90 205 120 200" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Neck -->
+    <path d="M 250 170 Q 230 180 220 185" fill="none" stroke="#333" stroke-width="4"/>
+    
+    <!-- Body pattern fading (rear has no stripes, just brown) -->
+    <ellipse cx="140" cy="195" rx="25" ry="20" fill="white" stroke="#333" stroke-width="1" opacity="0.3"/>
+</svg>

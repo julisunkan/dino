@@ -1,0 +1,74 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Megalodon body -->
+    <ellipse cx="200" cy="150" rx="120" ry="40" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Head -->
+    <ellipse cx="300" cy="150" rx="50" ry="35" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Massive jaw -->
+    <path d="M 320 130 Q 360 140 370 160 Q 360 180 320 170 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 320 170 Q 360 160 370 180 Q 360 200 320 190 Z" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Rows of massive teeth -->
+    <!-- Upper jaw teeth -->
+    <polygon points="340,145 345,155 343,155" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="345,140 350,150 348,150" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="350,140 355,150 353,150" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="355,145 360,155 358,155" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="360,150 365,160 363,160" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Lower jaw teeth -->
+    <polygon points="340,175 345,165 343,165" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="345,180 350,170 348,170" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="350,180 355,170 353,170" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="355,175 360,165 358,165" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="360,170 365,160 363,160" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Gills -->
+    <path d="M 280 130 Q 275 135 280 140" fill="none" stroke="#333" stroke-width="2"/>
+    <path d="M 275 135 Q 270 140 275 145" fill="none" stroke="#333" stroke-width="2"/>
+    <path d="M 270 140 Q 265 145 270 150" fill="none" stroke="#333" stroke-width="2"/>
+    <path d="M 265 145 Q 260 150 265 155" fill="none" stroke="#333" stroke-width="2"/>
+    <path d="M 260 150 Q 255 155 260 160" fill="none" stroke="#333" stroke-width="2"/>
+    
+    <!-- Eye -->
+    <circle cx="310" cy="140" r="6" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Dorsal fin -->
+    <polygon points="180,110 190,80 200,110" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Pectoral fins -->
+    <ellipse cx="160" cy="160" rx="30" ry="15" fill="white" stroke="#333" stroke-width="2" transform="rotate(30 160 160)"/>
+    <ellipse cx="160" cy="140" rx="30" ry="15" fill="white" stroke="#333" stroke-width="2" transform="rotate(-30 160 140)"/>
+    
+    <!-- Pelvic fins -->
+    <ellipse cx="140" cy="165" rx="15" ry="8" fill="white" stroke="#333" stroke-width="2" transform="rotate(45 140 165)"/>
+    <ellipse cx="140" cy="135" rx="15" ry="8" fill="white" stroke="#333" stroke-width="2" transform="rotate(-45 140 135)"/>
+    
+    <!-- Tail -->
+    <path d="M 80 150 Q 40 120 20 140 Q 30 150 40 150 Q 30 150 20 160 Q 40 180 80 150 Z" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Tail fin details -->
+    <path d="M 60 140 Q 35 125 25 140" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 60 160 Q 35 175 25 160" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 50 150 Q 30 150 25 150" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Body streamlining -->
+    <path d="M 120 135 Q 130 130 140 135" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 120 150 Q 130 145 140 150" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 120 165 Q 130 170 140 165" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <path d="M 220 135 Q 230 130 240 135" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 220 165 Q 230 170 240 165" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Fin details -->
+    <path d="M 145 155 Q 155 150 165 155" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 145 145 Q 155 150 165 145" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Nostril -->
+    <ellipse cx="330" cy="135" rx="3" ry="2" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Lateral line (sensory organ) -->
+    <path d="M 100 145 Q 150 142 200 145 Q 250 148 280 145" fill="none" stroke="#333" stroke-width="1" stroke-dasharray="3,2"/>
+    <path d="M 100 155 Q 150 158 200 155 Q 250 152 280 155" fill="none" stroke="#333" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,85 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Carolina Parakeet body -->
+    <ellipse cx="200" cy="180" rx="50" ry="30" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Head -->
+    <circle cx="250" cy="150" r="30" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Curved parrot beak -->
+    <path d="M 275 155 Q 290 150 285 165 Q 280 175 270 170 Q 275 160 275 155 Z" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Wings -->
+    <ellipse cx="180" cy="165" rx="35" ry="20" fill="white" stroke="#333" stroke-width="2" transform="rotate(-15 180 165)"/>
+    <ellipse cx="220" cy="165" rx="35" ry="20" fill="white" stroke="#333" stroke-width="2" transform="rotate(15 220 165)"/>
+    
+    <!-- Wing feather details -->
+    <path d="M 155 155 L 145 150" stroke="#333" stroke-width="1"/>
+    <path d="M 160 165 L 150 160" stroke="#333" stroke-width="1"/>
+    <path d="M 165 175 L 155 170" stroke="#333" stroke-width="1"/>
+    <path d="M 170 185 L 160 180" stroke="#333" stroke-width="1"/>
+    <path d="M 175 195 L 165 190" stroke="#333" stroke-width="1"/>
+    
+    <path d="M 245 155 L 255 150" stroke="#333" stroke-width="1"/>
+    <path d="M 240 165 L 250 160" stroke="#333" stroke-width="1"/>
+    <path d="M 235 175 L 245 170" stroke="#333" stroke-width="1"/>
+    <path d="M 230 185 L 240 180" stroke="#333" stroke-width="1"/>
+    <path d="M 225 195 L 235 190" stroke="#333" stroke-width="1"/>
+    
+    <!-- Tail feathers (long) -->
+    <path d="M 150 180 Q 110 175 80 185 Q 85 200 120 195 Q 140 190 150 185 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 145 185 Q 105 180 75 190 Q 80 205 115 200 Q 135 195 145 190 Z" fill="white" stroke="#333" stroke-width="2"/>
+    <path d="M 140 190 Q 100 185 70 195 Q 75 210 110 205 Q 130 200 140 195 Z" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Tail feather details -->
+    <path d="M 120 185 L 100 180" stroke="#333" stroke-width="1"/>
+    <path d="M 115 190 L 95 185" stroke="#333" stroke-width="1"/>
+    <path d="M 110 195 L 90 190" stroke="#333" stroke-width="1"/>
+    <path d="M 105 200 L 85 195" stroke="#333" stroke-width="1"/>
+    
+    <!-- Legs -->
+    <line x1="190" y1="200" x2="190" y2="220" stroke="#333" stroke-width="3"/>
+    <line x1="210" y1="200" x2="210" y2="220" stroke="#333" stroke-width="3"/>
+    
+    <!-- Zygodactyl feet (two toes forward, two back) -->
+    <path d="M 185 220 L 180 225 M 190 220 L 190 225 M 195 220 L 200 225 M 185 220 L 180 215" stroke="#333" stroke-width="2"/>
+    <path d="M 205 220 L 200 225 M 210 220 L 210 225 M 215 220 L 220 225 M 205 220 L 200 215" stroke="#333" stroke-width="2"/>
+    
+    <!-- Eye -->
+    <circle cx="255" cy="145" r="4" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Head coloring areas (distinctive yellow/orange head) -->
+    <circle cx="250" cy="150" r="25" fill="white" stroke="#333" stroke-width="1" opacity="0.3"/>
+    
+    <!-- Neck ring marking -->
+    <ellipse cx="235" cy="165" rx="20" ry="8" fill="white" stroke="#333" stroke-width="1" opacity="0.3"/>
+    
+    <!-- Wing markings -->
+    <ellipse cx="180" cy="165" rx="25" ry="15" fill="white" stroke="#333" stroke-width="1" opacity="0.3"/>
+    <ellipse cx="220" cy="165" rx="25" ry="15" fill="white" stroke="#333" stroke-width="1" opacity="0.3"/>
+    
+    <!-- Nostril -->
+    <circle cx="275" cy="152" r="1" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Crest feathers -->
+    <path d="M 240 125 Q 245 115 255 120 Q 265 115 270 125" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Beak detail -->
+    <path d="M 280 160 Q 285 165 280 170" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Wing pattern markings -->
+    <path d="M 170 160 Q 175 155 180 160" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 175 170 Q 180 165 185 170" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 180 180 Q 185 175 190 180" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <path d="M 230 160 Q 225 155 220 160" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 225 170 Q 220 165 215 170" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 220 180 Q 215 175 210 180" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Body feather pattern -->
+    <path d="M 175 170 Q 185 165 195 170" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 180 180 Q 190 175 200 180" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 185 190 Q 195 185 205 190" fill="none" stroke="#333" stroke-width="1"/>
+    
+    <!-- Perching branch -->
+    <path d="M 160 225 Q 200 220 240 225" fill="none" stroke="#333" stroke-width="4"/>
+</svg>

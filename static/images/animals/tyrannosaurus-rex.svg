@@ -1,0 +1,58 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- T-Rex body -->
+    <ellipse cx="180" cy="200" rx="70" ry="40" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- T-Rex head -->
+    <ellipse cx="280" cy="150" rx="50" ry="35" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Large jaw -->
+    <path d="M 320 160 Q 340 170 330 190 Q 310 185 300 175 Z" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Teeth -->
+    <polygon points="315,170 320,180 318,180" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="325,175 330,185 328,185" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="320,175 325,185 323,185" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Massive legs -->
+    <rect x="160" y="225" width="20" height="50" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="200" y="225" width="20" height="50" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Large feet with claws -->
+    <ellipse cx="170" cy="280" rx="15" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="210" cy="280" rx="15" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Claws -->
+    <path d="M 160 275 L 155 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 170 275 L 165 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 180 275 L 185 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 200 275 L 195 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 210 275 L 205 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 220 275 L 225 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Tiny arms -->
+    <ellipse cx="140" cy="180" rx="8" ry="20" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="135" cy="205" rx="5" ry="12" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Eye -->
+    <circle cx="290" cy="140" r="6" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Nostril -->
+    <ellipse cx="310" cy="145" rx="3" ry="2" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Neck -->
+    <path d="M 250 165 Q 230 175 220 185" fill="none" stroke="#333" stroke-width="3"/>
+    
+    <!-- Tail -->
+    <path d="M 110 200 Q 60 190 30 200 Q 20 210 35 220 Q 80 215 120 210" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Spinal ridges -->
+    <path d="M 150 180 L 145 175" stroke="#333" stroke-width="2"/>
+    <path d="M 170 175 L 165 170" stroke="#333" stroke-width="2"/>
+    <path d="M 190 175 L 185 170" stroke="#333" stroke-width="2"/>
+    <path d="M 210 175 L 205 170" stroke="#333" stroke-width="2"/>
+    
+    <!-- Back pattern -->
+    <path d="M 130 190 Q 140 185 150 190" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 160 185 Q 170 180 180 185" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 190 185 Q 200 180 210 185" fill="none" stroke="#333" stroke-width="1"/>
+</svg>

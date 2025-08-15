@@ -1,0 +1,81 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cave Bear body -->
+    <ellipse cx="200" cy="200" rx="90" ry="55" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Cave Bear head -->
+    <circle cx="280" cy="160" r="50" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Snout -->
+    <ellipse cx="320" cy="170" rx="20" ry="15" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Massive legs -->
+    <rect x="150" y="235" width="20" height="40" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="180" y="235" width="20" height="40" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="210" y="235" width="20" height="40" fill="white" stroke="#333" stroke-width="2"/>
+    <rect x="240" y="235" width="20" height="40" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Large paws with claws -->
+    <ellipse cx="160" cy="280" rx="15" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="190" cy="280" rx="15" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="220" cy="280" rx="15" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="250" cy="280" rx="15" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Claws -->
+    <path d="M 150 275 L 145 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 160 275 L 155 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 170 275 L 175 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    
+    <path d="M 180 275 L 175 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 190 275 L 185 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 200 275 L 205 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    
+    <path d="M 210 275 L 205 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 220 275 L 215 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 230 275 L 235 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    
+    <path d="M 240 275 L 235 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 250 275 L 245 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 260 275 L 265 285" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Ears -->
+    <ellipse cx="260" cy="125" rx="12" ry="18" fill="white" stroke="#333" stroke-width="2"/>
+    <ellipse cx="300" cy="125" rx="12" ry="18" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Eyes -->
+    <circle cx="270" cy="150" r="5" fill="white" stroke="#333" stroke-width="2"/>
+    <circle cx="290" cy="150" r="5" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Nose -->
+    <circle cx="325" cy="165" r="4" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Mouth -->
+    <path d="M 315 180 Q 325 190 335 180" fill="none" stroke="#333" stroke-width="3"/>
+    
+    <!-- Fur texture -->
+    <path d="M 140 180 L 130 175" stroke="#333" stroke-width="2"/>
+    <path d="M 150 190 L 140 185" stroke="#333" stroke-width="2"/>
+    <path d="M 160 200 L 150 195" stroke="#333" stroke-width="2"/>
+    <path d="M 170 210 L 160 205" stroke="#333" stroke-width="2"/>
+    <path d="M 180 220 L 170 215" stroke="#333" stroke-width="2"/>
+    
+    <path d="M 250 140 L 240 135" stroke="#333" stroke-width="2"/>
+    <path d="M 260 150 L 250 145" stroke="#333" stroke-width="2"/>
+    <path d="M 270 130 L 260 125" stroke="#333" stroke-width="2"/>
+    <path d="M 290 130 L 300 125" stroke="#333" stroke-width="2"/>
+    <path d="M 310 140 L 320 135" stroke="#333" stroke-width="2"/>
+    
+    <!-- Shoulder hump -->
+    <ellipse cx="220" cy="160" rx="30" ry="20" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Tail -->
+    <ellipse cx="120" cy="205" rx="15" ry="8" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Massive neck -->
+    <path d="M 250 180 Q 230 190 210 195" fill="none" stroke="#333" stroke-width="8"/>
+    
+    <!-- Additional fur details -->
+    <path d="M 200 170 Q 210 165 220 170" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 180 185 Q 190 180 200 185" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 220 185 Q 230 180 240 185" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M 260 170 Q 270 165 280 170" fill="none" stroke="#333" stroke-width="1"/>
+</svg>

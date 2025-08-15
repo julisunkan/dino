@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Extinct Animals Coloring Book{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Hero Section -->
+    <div class="row mb-5">
+        <div class="col-12 text-center">
+            <h1 class="display-4 mb-3">
+                <i class="fas fa-palette text-primary me-3"></i>
+                Extinct Animals Coloring Book
+            </h1>
+            <p class="lead">
+                Discover and color 20 amazing extinct animals while learning about their fascinating stories!
+            </p>
+        </div>
+    </div>
+
+    <!-- Filters and Search -->
+    <div class="row mb-4">
+        <div class="col-md-8">
+            <form method="GET" class="d-flex gap-2">
+                <input type="text" name="search" class="form-control" placeholder="Search animals..." 
+                       value="{{ search_query }}" />
+                <select name="category" class="form-select">
+                    <option value="">All Categories</option>
+                    {% for category in categories %}
+                    <option value="{{ category }}" {% if current_category == category %}selected{% endif %}>
+                        {{ category.title() }}
+                    </option>
+                    {% endfor %}
+                </select>
+                <button type="submit" class="btn btn-outline-primary">
+                    <i class="fas fa-search"></i>
+                </button>
+                {% if search_query or current_category %}
+                <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">
+                    <i class="fas fa-times"></i>
+                </a>
+                {% endif %}
+            </form>
+        </div>
+        <div class="col-md-4 text-md-end">
+            <a href="{{ url_for('random_animal') }}" class="btn btn-primary">
+                <i class="fas fa-random me-2"></i>Random Animal
+            </a>
+        </div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">
+                        <i class="fas fa-chart-line me-2"></i>Your Progress
+                    </h6>
+                    <div class="progress">
+                        <div id="progress-bar" class="progress-bar bg-success" role="progressbar" style="width: 0%">
+                            <span id="progress-text">0/20 animals colored</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animals Grid -->
+    <div class="row">
+        {% if animals %}
+            {% for animal in animals %}
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="card h-100 animal-card" data-animal-id="{{ animal.id }}">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">{{ animal.name }}</h5>
+                        <span class="badge bg-secondary">{{ animal.category.title() }}</span>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="svg-preview mb-3">
+                            <img src="{{ url_for('static', filename='images/animals/' + animal.filename) }}" 
+                                 alt="{{ animal.name }}" class="img-fluid" style="max-height: 200px;">
+                        </div>
+                        
+                        <p class="card-text">{{ animal.description }}</p>
+                        
+                        <div class="mb-2">
+                            <strong>Location:</strong> {{ animal.location }}
+                        </div>
+                        
+                        <div class="mb-3">
+                            <strong>Extinct:</strong> {{ animal.extinction_period }}
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="{{ url_for('color_animal', animal_id=animal.id) }}" 
+                               class="btn btn-primary">
+                                <i class="fas fa-palette me-1"></i>Start Coloring
+                            </a>
+                            <span class="colored-indicator" data-animal-id="{{ animal.id }}">
+                                <i class="fas fa-check-circle text-success" style="display: none;"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="col-12 text-center">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                        <h4>No animals found</h4>
+                        <p class="text-muted">Try adjusting your search or filter criteria.</p>
+                        <a href="{{ url_for('index') }}" class="btn btn-primary">Show All Animals</a>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+<script>
+// Progress tracking
+document.addEventListener('DOMContentLoaded', function() {
+    updateProgressDisplay();
+    updateColoredIndicators();
+});
+
+function updateProgressDisplay() {
+    const coloredAnimals = JSON.parse(localStorage.getItem('coloredAnimals') || '[]');
+    const totalAnimals = 20;
+    const coloredCount = coloredAnimals.length;
+    const percentage = (coloredCount / totalAnimals) * 100;
+    
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
+    
+    if (progressBar && progressText) {
+        progressBar.style.width = percentage + '%';
+        progressText.textContent = `${coloredCount}/${totalAnimals} animals colored`;
+    }
+}
+
+function updateColoredIndicators() {
+    const coloredAnimals = JSON.parse(localStorage.getItem('coloredAnimals') || '[]');
+    
+    coloredAnimals.forEach(animalId => {
+        const indicator = document.querySelector(`[data-animal-id="${animalId}"] .colored-indicator i`);
+        if (indicator) {
+            indicator.style.display = 'inline';
+        }
+    });
+}
+</script>
+{% endblock %}

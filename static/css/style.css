@@ -1,0 +1,159 @@
+/* Custom styles for the coloring book app */
+
+.animal-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.animal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.svg-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.colored-indicator {
+    font-size: 1.2em;
+}
+
+/* Progress bar styling */
+.progress {
+    height: 25px;
+    border-radius: 12px;
+}
+
+.progress-bar {
+    border-radius: 12px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* Coloring page specific styles */
+.coloring-container {
+    min-height: 70vh;
+}
+
+.svg-container {
+    background: white;
+    border: 2px dashed #dee2e6;
+    transition: border-color 0.3s ease;
+}
+
+.svg-container:hover {
+    border-color: #0d6efd;
+}
+
+/* Color palette styles */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 10px;
+}
+
+.color-option {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.color-option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.color-option.active {
+    border-color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 0 0 2px #0d6efd;
+}
+
+.color-option::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.8);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease;
+}
+
+.color-option.active::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* SVG coloring styles */
+.svg-container svg path,
+.svg-container svg circle,
+.svg-container svg ellipse,
+.svg-container svg polygon,
+.svg-container svg rect {
+    cursor: pointer;
+    transition: fill 0.2s ease;
+}
+
+.svg-container svg path:hover,
+.svg-container svg circle:hover,
+.svg-container svg ellipse:hover,
+.svg-container svg polygon:hover,
+.svg-container svg rect:hover {
+    stroke: #0d6efd;
+    stroke-width: 2;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .color-palette {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .color-option {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .controls {
+        flex-direction: column;
+    }
+    
+    .controls .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+/* Loading animation */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.spinner-border {
+    color: #0d6efd;
+}
+
+/* Success animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.animal-completed {
+    animation: pulse 0.5s ease-in-out;
+}
