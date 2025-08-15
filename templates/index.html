@@ -1,159 +1,139 @@
 {% extends "base.html" %}
 
-{% block title %}Home - Extinct Animals Coloring Book{% endblock %}
+{% block title %}Extinct Animals{% endblock %}
 
 {% block content %}
-<div class="container">
-    <!-- Hero Section -->
-    <div class="row mb-5">
-        <div class="col-12 text-center">
-            <h1 class="display-4 mb-3">
-                <i class="fas fa-palette text-primary me-3"></i>
-                Extinct Animals Coloring Book
-            </h1>
-            <p class="lead">
-                Discover and color 20 amazing extinct animals while learning about their fascinating stories!
-            </p>
-        </div>
-    </div>
-
-    <!-- Filters and Search -->
-    <div class="row mb-4">
-        <div class="col-md-8">
-            <form method="GET" class="d-flex gap-2">
-                <input type="text" name="search" class="form-control" placeholder="Search animals..." 
-                       value="{{ search_query }}" />
-                <select name="category" class="form-select">
-                    <option value="">All Categories</option>
-                    {% for category in categories %}
-                    <option value="{{ category }}" {% if current_category == category %}selected{% endif %}>
-                        {{ category.title() }}
-                    </option>
-                    {% endfor %}
-                </select>
-                <button type="submit" class="btn btn-outline-primary">
-                    <i class="fas fa-search"></i>
-                </button>
-                {% if search_query or current_category %}
-                <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">
-                    <i class="fas fa-times"></i>
-                </a>
-                {% endif %}
-            </form>
-        </div>
-        <div class="col-md-4 text-md-end">
-            <a href="{{ url_for('random_animal') }}" class="btn btn-primary">
-                <i class="fas fa-random me-2"></i>Random Animal
-            </a>
-        </div>
-    </div>
-
-    <!-- Progress Indicator -->
-    <div class="row mb-4">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <i class="fas fa-chart-line me-2"></i>Your Progress
-                    </h6>
-                    <div class="progress">
-                        <div id="progress-bar" class="progress-bar bg-success" role="progressbar" style="width: 0%">
-                            <span id="progress-text">0/20 animals colored</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Animals Grid -->
-    <div class="row">
-        {% if animals %}
-            {% for animal in animals %}
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-                <div class="card h-100 animal-card" data-animal-id="{{ animal.id }}">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <h5 class="card-title mb-0">{{ animal.name }}</h5>
-                        <span class="badge bg-secondary">{{ animal.category.title() }}</span>
-                    </div>
-                    
-                    <div class="card-body">
-                        <div class="svg-preview mb-3">
-                            <img src="{{ url_for('static', filename='images/animals/' + animal.filename) }}" 
-                                 alt="{{ animal.name }}" class="img-fluid" style="max-height: 200px;">
-                        </div>
-                        
-                        <p class="card-text">{{ animal.description }}</p>
-                        
-                        <div class="mb-2">
-                            <strong>Location:</strong> {{ animal.location }}
-                        </div>
-                        
-                        <div class="mb-3">
-                            <strong>Extinct:</strong> {{ animal.extinction_period }}
-                        </div>
-                    </div>
-                    
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <a href="{{ url_for('color_animal', animal_id=animal.id) }}" 
-                               class="btn btn-primary">
-                                <i class="fas fa-palette me-1"></i>Start Coloring
-                            </a>
-                            <span class="colored-indicator" data-animal-id="{{ animal.id }}">
-                                <i class="fas fa-check-circle text-success" style="display: none;"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        {% else %}
-            <div class="col-12 text-center">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fas fa-search fa-3x text-muted mb-3"></i>
-                        <h4>No animals found</h4>
-                        <p class="text-muted">Try adjusting your search or filter criteria.</p>
-                        <a href="{{ url_for('index') }}" class="btn btn-primary">Show All Animals</a>
-                    </div>
-                </div>
-            </div>
-        {% endif %}
+<!-- Search Section -->
+<div class="search-section">
+    <input type="text" id="searchInput" class="search-bar" placeholder="Search animals..." 
+           value="{{ search_query or '' }}" onkeyup="filterAnimals()">
+    
+    <div class="filter-pills">
+        <button class="filter-pill {% if not current_category %}active{% endif %}" 
+                onclick="filterByCategory('')">All</button>
+        {% for category in categories %}
+        <button class="filter-pill {% if current_category == category %}active{% endif %}" 
+                onclick="filterByCategory('{{ category }}')">{{ category.title() }}</button>
+        {% endfor %}
     </div>
 </div>
 
+<!-- Animals Grid -->
+<div class="animal-grid" id="animalsGrid">
+    {% if animals %}
+        {% for animal in animals %}
+        <a href="{{ url_for('color_animal', animal_id=animal.id) }}" class="animal-card" data-animal-id="{{ animal.id }}" data-category="{{ animal.category }}">
+            <div class="animal-preview">
+                <svg width="100" height="80" viewBox="0 0 400 300">
+                    <!-- Simple preview of the animal SVG -->
+                    {% if animal.id == 'woolly-mammoth' %}
+                    <ellipse cx="200" cy="200" rx="100" ry="65" fill="#8E8E93" stroke="#333" stroke-width="2"/>
+                    <ellipse cx="290" cy="150" rx="45" ry="55" fill="#8E8E93" stroke="#333" stroke-width="2"/>
+                    <path d="M 310 145 Q 340 115 365 125" fill="none" stroke="#333" stroke-width="6"/>
+                    <path d="M 310 165 Q 340 195 365 185" fill="none" stroke="#333" stroke-width="6"/>
+                    {% elif animal.id == 'saber-toothed-cat' %}
+                    <ellipse cx="200" cy="190" rx="85" ry="45" fill="#8E8E93" stroke="#333" stroke-width="2"/>
+                    <ellipse cx="290" cy="145" rx="35" ry="40" fill="#8E8E93" stroke="#333" stroke-width="2"/>
+                    <path d="M 305 150 Q 310 170 315 190" fill="none" stroke="#333" stroke-width="4"/>
+                    <path d="M 315 150 Q 320 170 325 190" fill="none" stroke="#333" stroke-width="4"/>
+                    {% elif animal.id == 'tyrannosaurus-rex' %}
+                    <ellipse cx="180" cy="200" rx="60" ry="35" fill="#8E8E93" stroke="#333" stroke-width="2"/>
+                    <ellipse cx="290" cy="140" rx="45" ry="40" fill="#8E8E93" stroke="#333" stroke-width="2"/>
+                    <path d="M 325 135 Q 350 140 355 160" fill="white" stroke="#333" stroke-width="2"/>
+                    {% elif animal.id == 'dodo' %}
+                    <ellipse cx="200" cy="185" rx="75" ry="55" fill="#8E8E93" stroke="#333" stroke-width="2"/>
+                    <ellipse cx="285" cy="135" rx="35" ry="38" fill="#8E8E93" stroke="#333" stroke-width="2"/>
+                    <path d="M 315 125 Q 345 115 355 135" fill="white" stroke="#333" stroke-width="2"/>
+                    {% else %}
+                    <ellipse cx="200" cy="180" rx="80" ry="45" fill="#8E8E93" stroke="#333" stroke-width="2"/>
+                    <circle cx="280" cy="140" r="35" fill="#8E8E93" stroke="#333" stroke-width="2"/>
+                    {% endif %}
+                </svg>
+                
+                <div class="completion-badge" style="display: none;">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+            
+            <div class="animal-info">
+                <h3 class="animal-name">{{ animal.name }}</h3>
+                <p class="animal-category">{{ animal.category }}</p>
+            </div>
+        </a>
+        {% endfor %}
+    {% else %}
+        <div style="grid-column: 1 / -1; text-align: center; padding: 40px;">
+            <i class="fas fa-search" style="font-size: 48px; color: #8E8E93; margin-bottom: 16px;"></i>
+            <p style="color: #8E8E93;">No animals found matching your search.</p>
+        </div>
+    {% endif %}
+</div>
+
 <script>
-// Progress tracking
+// Update progress and completion status on page load
 document.addEventListener('DOMContentLoaded', function() {
-    updateProgressDisplay();
-    updateColoredIndicators();
+    updateAnimalCompletionStatus();
 });
 
-function updateProgressDisplay() {
-    const coloredAnimals = JSON.parse(localStorage.getItem('coloredAnimals') || '[]');
-    const totalAnimals = 20;
-    const coloredCount = coloredAnimals.length;
-    const percentage = (coloredCount / totalAnimals) * 100;
-    
-    const progressBar = document.getElementById('progress-bar');
-    const progressText = document.getElementById('progress-text');
-    
-    if (progressBar && progressText) {
-        progressBar.style.width = percentage + '%';
-        progressText.textContent = `${coloredCount}/${totalAnimals} animals colored`;
-    }
-}
-
-function updateColoredIndicators() {
+function updateAnimalCompletionStatus() {
     const coloredAnimals = JSON.parse(localStorage.getItem('coloredAnimals') || '[]');
     
-    coloredAnimals.forEach(animalId => {
-        const indicator = document.querySelector(`[data-animal-id="${animalId}"] .colored-indicator i`);
-        if (indicator) {
-            indicator.style.display = 'inline';
+    // Update completion badges
+    document.querySelectorAll('.animal-card').forEach(card => {
+        const animalId = card.dataset.animalId;
+        const badge = card.querySelector('.completion-badge');
+        
+        if (coloredAnimals.includes(animalId)) {
+            badge.style.display = 'flex';
+        } else {
+            badge.style.display = 'none';
         }
     });
 }
+
+// Filter functionality
+function filterAnimals() {
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.animal-card');
+    
+    cards.forEach(card => {
+        const name = card.querySelector('.animal-name').textContent.toLowerCase();
+        const category = card.dataset.category.toLowerCase();
+        
+        if (name.includes(searchTerm) || category.includes(searchTerm)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+function filterByCategory(category) {
+    // Update active pill
+    document.querySelectorAll('.filter-pill').forEach(pill => {
+        pill.classList.remove('active');
+    });
+    event.target.classList.add('active');
+    
+    // Filter cards
+    const cards = document.querySelectorAll('.animal-card');
+    
+    cards.forEach(card => {
+        const cardCategory = card.dataset.category;
+        
+        if (category === '' || cardCategory === category) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+// Handle back navigation to refresh completion status
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted || performance.navigation.type === 2) {
+        updateAnimalCompletionStatus();
+    }
+});
 </script>
 {% endblock %}

@@ -1,178 +1,158 @@
 {% extends "base.html" %}
 
-{% block title %}Color {{ animal.name }} - Extinct Animals Coloring Book{% endblock %}
+{% block title %}{{ animal.name }}{% endblock %}
 
-{% block extra_head %}
-<style>
-    .coloring-container {
-        position: relative;
-    }
-    
-    .svg-container {
-        background: white;
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    
-    .svg-container svg {
-        width: 100%;
-        height: auto;
-        max-width: 600px;
-        cursor: pointer;
-    }
-    
-    .color-palette {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-        gap: 10px;
-        margin-bottom: 20px;
-    }
-    
-    .color-option {
-        width: 50px;
-        height: 50px;
-        border-radius: 8px;
-        border: 3px solid transparent;
-        cursor: pointer;
-        transition: all 0.2s ease;
-    }
-    
-    .color-option:hover,
-    .color-option.active {
-        border-color: #fff;
-        transform: scale(1.1);
-    }
-    
-    .controls {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-    }
-    
-    @media (max-width: 768px) {
-        .color-palette {
-            grid-template-columns: repeat(6, 1fr);
-        }
-        
-        .color-option {
-            width: 40px;
-            height: 40px;
-        }
-    }
-</style>
+{% block header_title %}{{ animal.name }}{% endblock %}
+
+{% block header_right %}
+<button class="header-btn" onclick="shareColoring()">
+    <i class="fas fa-share"></i>
+</button>
 {% endblock %}
 
 {% block content %}
-<div class="container">
-    <!-- Header -->
-    <div class="row mb-4">
-        <div class="col-12">
-            <div class="d-flex justify-content-between align-items-center flex-wrap">
-                <div>
-                    <h1 class="h2 mb-1">{{ animal.name }}</h1>
-                    <span class="badge bg-secondary me-2">{{ animal.category.title() }}</span>
-                    <span class="text-muted">{{ animal.location }}</span>
-                </div>
-                <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">
-                    <i class="fas fa-arrow-left me-1"></i>Back to Gallery
-                </a>
-            </div>
+<!-- Animal Info Header -->
+<div class="coloring-header">
+    <p class="animal-subtitle">{{ animal.category.title() }} • {{ animal.location }}</p>
+</div>
+
+<!-- Coloring Interface -->
+<div class="coloring-container">
+    <!-- SVG Canvas -->
+    <div class="svg-container" id="svgContainer">
+        <!-- SVG will be loaded here -->
+    </div>
+    
+    <!-- Color Palette -->
+    <div class="color-palette-section">
+        <h3 class="palette-title">Choose Colors</h3>
+        <div class="color-palette" id="colorPalette">
+            <div class="color-option active" data-color="#ff6b6b" style="background-color: #ff6b6b;"></div>
+            <div class="color-option" data-color="#4ecdc4" style="background-color: #4ecdc4;"></div>
+            <div class="color-option" data-color="#45b7d1" style="background-color: #45b7d1;"></div>
+            <div class="color-option" data-color="#96ceb4" style="background-color: #96ceb4;"></div>
+            <div class="color-option" data-color="#feca57" style="background-color: #feca57;"></div>
+            <div class="color-option" data-color="#ff9ff3" style="background-color: #ff9ff3;"></div>
+            <div class="color-option" data-color="#54a0ff" style="background-color: #54a0ff;"></div>
+            <div class="color-option" data-color="#5f27cd" style="background-color: #5f27cd;"></div>
+            <div class="color-option" data-color="#00d2d3" style="background-color: #00d2d3;"></div>
+            <div class="color-option" data-color="#ff6348" style="background-color: #ff6348;"></div>
+            <div class="color-option" data-color="#2ed573" style="background-color: #2ed573;"></div>
+            <div class="color-option" data-color="#a4b0be" style="background-color: #a4b0be;"></div>
         </div>
     </div>
+    
+    <!-- Controls -->
+    <div class="controls">
+        <button class="control-btn" onclick="undoLastAction()">
+            <i class="fas fa-undo"></i> Undo
+        </button>
+        <button class="control-btn" onclick="redoLastAction()">
+            <i class="fas fa-redo"></i> Redo
+        </button>
+        <button class="control-btn" onclick="clearColoring()">
+            <i class="fas fa-eraser"></i> Clear
+        </button>
+        <button class="control-btn primary" onclick="exportColoring()">
+            <i class="fas fa-download"></i> Save
+        </button>
+    </div>
+</div>
 
-    <div class="row">
-        <!-- Coloring Area -->
-        <div class="col-lg-8">
-            <div class="svg-container text-center">
-                <div id="svg-container">
-                    <!-- SVG will be loaded here -->
-                </div>
-            </div>
-            
-            <!-- Controls -->
-            <div class="controls">
-                <button id="undo-btn" class="btn btn-outline-warning" disabled>
-                    <i class="fas fa-undo me-1"></i>Undo
-                </button>
-                <button id="redo-btn" class="btn btn-outline-info" disabled>
-                    <i class="fas fa-redo me-1"></i>Redo
-                </button>
-                <button id="clear-btn" class="btn btn-outline-danger">
-                    <i class="fas fa-eraser me-1"></i>Clear All
-                </button>
-                <button id="export-btn" class="btn btn-success">
-                    <i class="fas fa-download me-1"></i>Export PNG
-                </button>
-            </div>
+<!-- Animal Facts Section -->
+<div class="color-palette-section">
+    <h3 class="palette-title">About {{ animal.name }}</h3>
+    <p style="color: #8E8E93; line-height: 1.6;">{{ animal.description }}</p>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px;">
+        <div style="background: #2C2C2E; padding: 12px; border-radius: 12px;">
+            <div style="color: #007AFF; font-size: 12px; text-transform: uppercase; margin-bottom: 4px;">Location</div>
+            <div style="font-weight: 600;">{{ animal.location }}</div>
         </div>
-
-        <!-- Sidebar -->
-        <div class="col-lg-4">
-            <!-- Color Palette -->
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h5 class="card-title mb-0">
-                        <i class="fas fa-palette me-2"></i>Color Palette
-                    </h5>
-                </div>
-                <div class="card-body">
-                    <div class="color-palette" id="color-palette">
-                        <!-- Colors will be generated by JavaScript -->
-                    </div>
-                </div>
-            </div>
-
-            <!-- Animal Information -->
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h5 class="card-title mb-0">
-                        <i class="fas fa-info-circle me-2"></i>About {{ animal.name }}
-                    </h5>
-                </div>
-                <div class="card-body">
-                    <p>{{ animal.description }}</p>
-                    
-                    <div class="row g-3">
-                        <div class="col-12">
-                            <strong>Location:</strong><br>
-                            {{ animal.location }}
-                        </div>
-                        <div class="col-12">
-                            <strong>Extinction Period:</strong><br>
-                            {{ animal.extinction_period }}
-                        </div>
-                        <div class="col-12">
-                            <strong>Category:</strong><br>
-                            {{ animal.category.title() }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Navigation -->
-            <div class="card">
-                <div class="card-body text-center">
-                    <a href="{{ url_for('random_animal') }}" class="btn btn-primary w-100 mb-2">
-                        <i class="fas fa-random me-1"></i>Color Random Animal
-                    </a>
-                    <a href="{{ url_for('index') }}" class="btn btn-outline-secondary w-100">
-                        <i class="fas fa-th me-1"></i>View All Animals
-                    </a>
-                </div>
-            </div>
+        <div style="background: #2C2C2E; padding: 12px; border-radius: 12px;">
+            <div style="color: #007AFF; font-size: 12px; text-transform: uppercase; margin-bottom: 4px;">Extinct</div>
+            <div style="font-weight: 600;">{{ animal.extinction_date }}</div>
         </div>
     </div>
 </div>
 
 <script src="{{ url_for('static', filename='js/coloring.js') }}"></script>
 <script>
+let coloringApp;
+
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize the coloring app
-    const coloringApp = new ColoringApp('{{ animal.id }}', '{{ animal.filename }}');
+    coloringApp = new ColoringApp('{{ animal.id }}', '{{ animal.filename }}');
     coloringApp.init();
+    
+    // Setup color selection
+    setupColorPalette();
 });
+
+function setupColorPalette() {
+    const colorOptions = document.querySelectorAll('.color-option');
+    
+    colorOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            // Remove active class from all options
+            colorOptions.forEach(opt => opt.classList.remove('active'));
+            
+            // Add active class to clicked option
+            this.classList.add('active');
+            
+            // Set the selected color in the coloring app
+            if (coloringApp) {
+                coloringApp.setSelectedColor(this.dataset.color);
+            }
+        });
+    });
+    
+    // Set initial color
+    const firstColor = document.querySelector('.color-option');
+    if (firstColor && coloringApp) {
+        coloringApp.setSelectedColor(firstColor.dataset.color);
+    }
+}
+
+function undoLastAction() {
+    if (coloringApp) {
+        coloringApp.undo();
+    }
+}
+
+function redoLastAction() {
+    if (coloringApp) {
+        coloringApp.redo();
+    }
+}
+
+function clearColoring() {
+    if (confirm('Clear all colors? This cannot be undone.')) {
+        if (coloringApp) {
+            coloringApp.clearAll();
+        }
+    }
+}
+
+function exportColoring() {
+    if (coloringApp) {
+        coloringApp.exportToPNG();
+    }
+}
+
+function shareColoring() {
+    if (navigator.share) {
+        navigator.share({
+            title: 'Look at my {{ animal.name }} coloring!',
+            text: 'Check out how I colored this extinct {{ animal.name }}!',
+            url: window.location.href
+        });
+    } else {
+        // Fallback - copy link
+        navigator.clipboard.writeText(window.location.href).then(() => {
+            alert('Link copied to clipboard!');
+        });
+    }
+}
 </script>
 {% endblock %}
