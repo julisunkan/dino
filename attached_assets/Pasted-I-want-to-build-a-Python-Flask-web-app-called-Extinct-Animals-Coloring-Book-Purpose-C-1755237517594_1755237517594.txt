@@ -1,0 +1,48 @@
+I want to build a Python Flask web app called **"Extinct Animals Coloring Book"**.
+
+🎯 Purpose:
+Create a browser-based educational coloring book featuring **20 extinct animals**, each with a professional line-drawing SVG users can color in using click-to-fill logic. Each animal should look realistic.
+
+🔧 Tech Stack:
+- Python + Flask (backend)
+- HTML, CSS, JavaScript (frontend)
+- SVGs for coloring (clickable parts)
+- `animals.json` to hold metadata
+- No login system needed
+
+📁 Project Requirements:
+1. Scaffold a working Flask app with `/` (home) and `/color/<animal_id>` routes.
+2. On the homepage, list all 20 extinct animals using data from `animals.json`.
+3. Each animal has:
+   - An `id`, `name`, `filename`, `category`, `description`, and `location`.
+4. On `/color/<animal_id>` route:
+   - Load the corresponding SVG from `/static/images/animals/`
+   - Include a JS-based color fill system for the SVG (click to fill)
+   - Include a color palette UI
+   - Display animal facts (from JSON)
+5. Allow image export as PNG (frontend only)
+6. Add a “Random Animal” button
+7. Add filters (by category like mammals, birds, dinosaurs)
+8. Add a timeline view (sort by extinction date or period)
+9. Add a map view showing original habitats using Leaflet.js or a simple SVG map
+10. Add undo/redo buttons for coloring
+11. Track how many animals the user has colored using local storage
+12. Ensure the app is mobile responsive
+
+📦 Assets:
+- Please generate a real `animals.json` file with 20 extinct animals. Each entry should include:
+  - `id`: lowercase, hyphenated name (e.g., `woolly-mammoth`)
+  - `name`: Common name
+  - `filename`: matching SVG file name (e.g., `woolly-mammoth.svg`)
+  - `category`: e.g., mammal, bird, reptile, dinosaur, fish, insect
+  - `description`: 1-2 sentence fact about the animal and its extinction
+  - `location`: where it lived (country or region)
+- Also create placeholder SVG files in `/static/images/animals/` (named to match filenames in JSON). Each SVG should contain a simple outline (e.g., a few paths or circles) and be valid for click-to-fill coloring.
+
+✅ Notes:
+- Do **not** require user login
+- Keep the code modular and clean
+- Use Jinja2 for templates
+- Use vanilla JS or minimal libraries
+
+Please generate the full app with sample data and placeholder assets so I can run it immediately in Replit.
